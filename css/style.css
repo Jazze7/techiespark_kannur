@@ -1,0 +1,684 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+del {
+  text-decoration: line-through;
+}
+body {
+  font-family: "SansRegular", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #000;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 500;
+}
+input,
+textarea,
+select {
+  font-family: "SansRegular", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.thumb {
+  display: block;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+}
+a {
+  cursor: pointer;
+}
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "SansRegular", Arial;
+  font-weight: 500;
+  color: #000;
+}
+@font-face {
+  font-family: "Gordita Regular";
+  src: url("../fonts/Gordita-Regular.woff2") format("woff2"),
+    url("../fonts/Gordita-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita Bold";
+  src: url("../fonts/Gordita-Bold.woff2") format("woff2"),
+    url("../fonts/Gordita-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita Medium";
+  src: url("../fonts/Gordita-Medium.woff2") format("woff2"),
+    url("../fonts/Gordita-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SansBold";
+  src: url("../fonts/DMSans-Bold.woff2") format("woff2"),
+    url("../fonts/DMSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SansMedium";
+  src: url("../fonts/DMSans-Medium.woff2") format("woff2"),
+    url("../fonts/DMSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SansRegular";
+  src: url("../fonts/DMSans-Regular.woff2") format("woff2"),
+    url("../fonts/DMSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.popup-content {
+  border: none !important;
+  background: none !important;
+}
+.active {
+  color: #0fa76f;
+}
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+section#home {
+}
+
+section#home div.wrapper {
+}
+
+section#home div.wrapper header {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  z-index: 2;
+  background: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+section#home div.wrapper header h1 {
+  width: 50%;
+}
+
+section#home div.wrapper header h1 a {
+  width: 30%;
+  display: block;
+}
+
+section#home div.wrapper header h1 a img {
+  display: block;
+  width: 100%;
+}
+
+section#home div.wrapper header nav.right {
+  width: 40%;
+}
+
+section#home div.wrapper header nav.right ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+section#home div.wrapper header nav.right ul li {
+}
+
+section#home div.wrapper header nav.right ul li a {
+  font-size: 18px;
+  font-family: "Gordita Medium";
+  color: #666666;
+}
+section#home div.wrapper header nav.right div.hamburger {
+  display: none;
+}
+
+section#home div.wrapper header nav.right div.hamburger img {
+  width: 100%;
+  display: block;
+}
+
+section#home section#spotlight {
+  background: linear-gradient(to left, #f4f1e9 0%, #ffffff 100%);
+  display: flex;
+  position: relative;
+  padding: 100px 0 100px 100px;
+}
+
+section#home section#spotlight div.left {
+  width: 45%;
+}
+
+section#home section#spotlight div.left h1 {
+  font-size: 50px;
+  font-family: "SansBold";
+  margin-bottom: 15px;
+}
+
+section#home section#spotlight div.left h1 i {
+  font-family: "SansBold";
+  color: #009262;
+}
+
+section#home section#spotlight div.left p {
+  font-size: 18px;
+  color: #747474;
+  width: 80%;
+}
+
+section#home section#spotlight div.left div.location {
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding: 6px 12px;
+  background: #ffff;
+  margin: 40px 0;
+}
+
+section#home section#spotlight div.left div.location span {
+  width: 20px;
+}
+
+section#home section#spotlight div.left div.location span img {
+  display: block;
+  width: 100%;
+}
+
+section#home section#spotlight div.left div.location h4 {
+  font-family: "SansMedium";
+  font-size: 15px;
+  display: inline;
+}
+
+section#home section#spotlight div.left button {
+  background: #0fa76f;
+  font-family: "SansRegular";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+section#home section#spotlight div.left button span.videobutton {
+  display: block;
+  width: 100px;
+}
+
+section#home section#spotlight div.left button img {
+  margin-left: 5px;
+  width: 30%;
+  display: block;
+}
+section#home section#spotlight div.right {
+  width: 50%;
+}
+
+section#home section#spotlight div.right div.imagecontainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 63%;
+}
+
+section#home section#spotlight div.right div.imagecontainer img {
+  width: 100%;
+  display: block;
+}
+
+section#home section#spotlight div.right div.buttoncontainer {
+  position: absolute;
+  right: 34%;
+  top: 55%;
+  width: 11%;
+}
+section#home section#spotlight div.right div.buttoncontainer::after {
+  background-color: rgb(15, 167, 111);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+section#home section#spotlight div.right div.buttoncontainer img {
+  display: block;
+  width: 100%;
+}
+section#amenities {
+  padding: 100px 0;
+  animation: 600ms ease-in-out 0ms 1 normal none running fade;
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @media all and (max-width: 980px) {
+    padding: 60px 0;
+  }
+}
+
+section#amenities div.wrapper {
+}
+
+section#amenities div.wrapper h1 {
+  font-size: 32px;
+  font-family: "SansBold";
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  letter-spacing: 0.02em;
+}
+
+section#amenities div.wrapper h1 small {
+  display: inline-block;
+  color: #62af84;
+  position: relative;
+}
+
+section#amenities div.wrapper h1 small img {
+  position: absolute;
+  bottom: -15%;
+  left: 10%;
+}
+
+section#amenities div.wrapper p {
+  color: #747474;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  margin-bottom: 50px;
+}
+
+section#amenities div.wrapper div.gallery {
+}
+
+section#amenities div.wrapper div.gallery ul.photobooth {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 6px;
+}
+
+section#amenities div.wrapper div.gallery ul.photobooth li {
+  width: 30%;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  position: relative;
+  animation: 600ms ease-in-out 0ms 1 normal none running fade;
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+section#amenities div.wrapper div.gallery ul.photobooth li:hover {
+}
+
+section#amenities div.wrapper div.gallery ul.photobooth li img {
+}
+
+section#amenities div.wrapper div.gallery ul.photobooth li span.count {
+  background: #00000066;
+  padding: 8px 14px;
+  position: absolute;
+  top: 15px;
+  border-radius: 15px;
+  right: 20px;
+  display: block;
+}
+
+section#amenities div.wrapper div.gallery ul.photobooth li span.count small {
+  color: #fff;
+  font-size: 11px;
+  display: block;
+}
+
+section#amenities div.wrapper div.gallery ul.photobooth li span.name {
+  font-size: 14px;
+  font-family: "SansMedium";
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+section#amenities div.wrapper div.gallery ul.photobooth li span.hover {
+  display: none;
+  font-size: 14px;
+  font-family: "SansMedium";
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  animation: 600ms ease-in-out 0ms 1 normal none running fade;
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+section#amenities
+  div.wrapper
+  div.gallery
+  ul.photobooth
+  li
+  span.hover
+  span.hoverimage {
+  width: 10%;
+  display: block;
+  position: absolute;
+  bottom: -10%;
+  left: 23%;
+}
+
+section#amenities
+  div.wrapper
+  div.gallery
+  ul.photobooth
+  li
+  span.hover
+  span.hoverimage
+  img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+section#events {
+  background: #fcfbf8;
+  padding: 100px 0;
+  animation: 300ms ease-in-out 0ms 1 normal none running fade;
+}
+
+section#events div.wrapper {
+}
+
+section#events div.wrapper h1.head {
+  font-size: 32px;
+  font-family: "SansBold";
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  letter-spacing: 0.02em;
+}
+
+section#events div.wrapper h1.head small {
+  display: inline-block;
+  color: #62af84;
+  position: relative;
+  font-size: 32px;
+}
+
+section#events div.wrapper h1.head small img {
+  width: 100%;
+  display: block;
+}
+
+section#events div.wrapper > p {
+  color: #747474;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  width: 75%;
+  margin: 0 auto 30px auto;
+}
+
+section#events div.wrapper div.card {
+  display: flex;
+  justify-content: space-between;
+  background: #fff6f9;
+  border-radius: 12px;
+  padding: 50px;
+  border: 1px solid pink;
+  margin-bottom: 25px;
+}
+section#events div.wrapper div.card:nth-child(2n) {
+  display: flex;
+  background: #f1fcff;
+  flex-direction: row-reverse;
+  border: 1px solid #c8efef;
+}
+section#events div.wrapper div.card:nth-child(5) {
+  background: #fff6f9;
+  margin-bottom: 50px;
+  border: 1px solid #d4d4d4;
+}
+
+section#events div.wrapper div.card div.left {
+  width: 50%;
+}
+
+section#events div.wrapper div.card div.left h2 {
+  font-family: "SansBold";
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+section#events div.wrapper div.card div.left small {
+  font-family: "SansMedium";
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #adadad;
+  display: block;
+}
+
+section#events div.wrapper div.card div.left p {
+  font-size: 15px;
+  color: #747474;
+  margin-bottom: 25%;
+}
+
+section#events div.wrapper div.card div.left div.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+section#events div.wrapper div.card div.left div.bottom button {
+  background: #0fa76f;
+  padding: 0 10px;
+  height: 40px;
+  margin-top: 50px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 110px;
+}
+
+section#events div.wrapper div.card div.left div.bottom button span.buttonname {
+  font-family: "SansMedium";
+  font-size: 14px;
+  color: #fff;
+  display: contents;
+}
+
+section#events div.wrapper div.card div.left div.bottom button img {
+  width: 20px;
+}
+
+section#events div.wrapper div.card div.left div.bottom div.eventnumber {
+}
+
+section#events div.wrapper div.card div.left div.bottom div.eventnumber img {
+}
+
+section#events div.wrapper div.card div.right {
+  width: 45%;
+}
+
+section#events div.wrapper div.card div.right div.ImageContainer {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+section#events div.wrapper div.card div.right div.ImageContainer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+section#events div.wrapper button.foot {
+  width: 100%;
+}
+
+section#events div.wrapper button span.buttonviewname {
+  background: #0fa76f;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 220px;
+  font-family: "SansBold";
+  font-size: 16px;
+}
+section#events div.wrapper button span.buttonviewname img {
+  width: 15%;
+}
+section#revenue {
+  padding: 100px 0;
+  animation: 300ms ease-in-out 0ms 1 normal none running fade;
+}
+
+section#revenue div.wrapper {
+}
+
+section#revenue div.wrapper h1 {
+  font-size: 32px;
+  font-family: "SansBold";
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  letter-spacing: 0.02em;
+}
+
+section#revenue div.wrapper h1 span {
+  display: inline-block;
+  color: #62af84;
+  position: relative;
+}
+
+section#revenue div.wrapper h1 span img {
+}
+
+section#revenue div.wrapper p {
+  color: #747474;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+section#revenue div.wrapper ul.widget {
+  margin-top: 20px;
+  display: flex;
+}
+
+section#revenue div.wrapper ul.widget li {
+  width: 24%;
+  padding: 25px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  transform: scale(0.9);
+  transition: all 0.2s ease-in-out 0s;
+}
+section#revenue div.wrapper ul.widget li:hover {
+  transform: scale(1);
+  background: linear-gradient(90deg, #0fa76f 2%, #21c487 97.59%);
+}
+
+section#revenue div.wrapper ul.widget li div.green {
+  width: 15%;
+}
+
+section#revenue div.wrapper ul.widget li div.green img {
+  display: block;
+  width: 100%;
+}
+
+section#revenue div.wrapper ul.widget li div.white {
+  width: 15%;
+  display: none;
+}
+
+section#revenue div.wrapper ul.widget li div.white img {
+  display: block;
+  width: 100%;
+}
+
+section#revenue div.wrapper ul.widget li h3 {
+  font-size: 18px;
+  margin: 10px 0 20px;
+  font-family: "SansBold";
+  color: #000;
+}
+
+section#revenue div.wrapper ul.widget li span {
+  font-size: 14px;
+  line-height: 1.6em;
+  font-family: "Gordita Regular";
+  color: #747474;
+}
