@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,369 +9,375 @@
     <link rel="shortcut icon" href="images/mainlogo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- (#home) -->
     <section id="home">
-      <div class="wrapper">
+        <!-- (header) -->
         <header>
-          <h1>
-            <a href="">
-              <img src="images/tplogo.png" alt="logo" />
-            </a>
-          </h1>
-          <nav class="right">
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Our Amenities</a></li>
-              <li><a href="">Our Events</a></li>
-              <li><a href="">Revenue Model</a></li>
-            </ul>
-            <div class="hamburger">
-              <img src="images/humbergimage.svg" alt="hamburger" />
+            <div class="wrapper">
+                <nav>
+                    <h1>
+                        <a href="#">
+                            <img src="images/tplogo.png" alt="logo" />
+                        </a>
+                    </h1>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#spotlight" class="active">Home</a></li>
+                            <li><a href="#amenities">Our Amenities</a></li>
+                            <li><a href="#events">Our Events</a></li>
+                            <li><a href="#revenue">Revenue Model</a></li>
+                        </ul>
+                        <div class="hamburger">
+                            <img src="images/humbergimage.svg" alt="hamburger" />
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#amenities">Our Amenities</a></li>
+                                <li><a href="#events">Our Events</a></li>
+                                <li><a href="#revenue">Revenue Model</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </nav>
-        </header>
-      </div>
-      <!-- (#home > spotlight) -->
 
-      <section id="spotlight">
-        <div class="left">
-          <h1>
-            Now we are at <i>Kannur </i><br />
-            Building a Strong<br />Startup Ecosystem
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada
-            pellentesque sit faucibus vel tellus pharetra et molestie. Enim in
-            vulputate in parturient diam in vulputatem Lorem ipsum tellus
-            pharetra et molestie.
-          </p>
-          <div class="location">
-            <span>
-              <img src="images/location.png" alt="location image" />
-            </span>
-            <h4>Kannur Techie’s Park, Kanhirode, Mattannur</h4>
-          </div>
-          <button>
-            <span class="videobutton">Play Video</span>
-            <img src="images/play.png" alt="play icon" />
-          </button>
-        </div>
-        <div class="right">
-          <div class="imagecontainer">
-            <img src="images/office.png" alt="officeimg" />
-          </div>
-          <div class="buttoncontainer">
-            <img src="images/playbuttonhome.png" alt="playbutton" />
-          </div>
-        </div>
-      </section>
-      <!-- (#home > spotlight) -->
+        </header>
+        <!-- (header) -->
+        <!-- (#home > spotlight) -->
+
+        <section id="spotlight">
+            <div class="video-player" >
+                <video  src="videos/kannur.mp4" controls></video>
+                <span>
+                    <img src="images/close.svg" alt="close-image" />
+                </span>
+            </div>
+            <div class="left">
+                <h1>
+                    Now we are at <i>Kannur </i><br />
+                    Building a Strong<br />Startup Ecosystem
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Malesuada pellentesque sit faucibus vel tellus pharetra
+                    et molestie. Enim in vulputate in parturient diam in
+                    vulputatem Lorem ipsum tellus pharetra et molestie.
+                </p>
+                <div class="location">
+                    <span>
+                        <img src="images/location.png" alt="location image" />
+                    </span>
+                    <h4>Kannur Techie’s Park, Kanhirode, Mattannur</h4>
+                </div>
+                <button>
+                    <span class="videobutton">Play Video</span>
+                    <img src="images/play.png" alt="play icon" />
+                </button>
+            </div>
+            <div class="right">
+                <div class="image-container">
+                    <img src="images/office.png" alt="officeimg" />
+                </div>
+                <div class="button-container">
+                    <img src="images/playbuttonhome.png" alt="playbutton" />
+                </div>
+            </div>
+        </section>
+        <!-- (#home > spotlight) -->
     </section>
     <!-- (#home) -->
     <!-- (#Amenities) -->
     <section id="amenities">
-      <div class="wrapper">
-        <h1>
-          Our<small
-            >&nbsp Amenities <img src="images/Vector.png" alt="Line"
-          /></small>
-        </h1>
-        <p>
-          Techies Park is a world-class infrastructure with premium amenities to
-          promote education and entrepreneurship and thereby aid overall
-          development of the constituency.
-        </p>
-        <div class="gallery">
-          <ul class="photobooth">
-            <li>
-              <img src="images/meetingroom.png" alt="meeting_room" />
-              <span class="count"><small>1/7</small></span
-              ><span class="name">Administration Room</span>
-              <span class="hover">
-                <span class="hoverimage"
-                  ><img src="images/gallery.png" alt="gallery"
-                /></span>
-                +7 More Images</span
-              >
-            </li>
-            <li>
-              <img src="images/reception.png" alt="reception" />
-              <span class="count"><small>1/7</small></span
-              ><span class="name">Reception</span>
-              <span class="hover">
-                <span class="hoverimage"
-                  ><img src="images/gallery.png" alt="gallery"
-                /></span>
-                +7 More Images</span
-              >
-            </li>
-            <li>
-              <img src="images/presentation.png" alt="presentation_room" />
-              <span class="count"><small>1/7</small></span
-              ><span class="name">Presentation Room</span>
-              <span class="hover">
-                <span class="hoverimage"
-                  ><img src="images/gallery.png" alt="gallery"
-                /></span>
-                +7 More Images</span
-              >
-            </li>
-            <li>
-              <img src="images/workspace.png" alt="workspace" />
-              <span class="count"><small>1/7</small></span
-              ><span class="name">Workspace</span>
-              <span class="hover">
-                <span class="hoverimage"
-                  ><img src="images/gallery.png" alt="gallery"
-                /></span>
-                +7 More Images</span
-              >
-            </li>
-            <li>
-              <img src="images/conferenceroom.png" alt="conferenceroom" />
-              <span class="count"><small>1/7</small></span
-              ><span class="name">Conference Room</span>
-              <span class="hover">
-                <span class="hoverimage"
-                  ><img src="images/gallery.png" alt="gallery"
-                /></span>
-                +7 More Images</span
-              >
-            </li>
-            <li>
-              <img src="images/conferenceroom.png" alt="conferenceroom" />
-              <span class="count"><small>1/7</small></span
-              ><span class="name">Conference Room</span>
-              <span class="hover">
-                <span class="hoverimage"
-                  ><img src="images/gallery.png" alt="gallery"
-                /></span>
-                +7 More Images</span
-              >
-            </li>
-            <li>
-              <img src="images/cafeteria.png" alt="cafeteria" />
-              <span class="count"><small>1/7</small></span
-              ><span class="name">Cafeteria </span>
-              <span class="hover">
-                <span class="hoverimage"
-                  ><img src="images/gallery.png" alt="gallery"
-                /></span>
-                +7 More Images</span
-              >
-            </li>
-            <li>
-              <img src="images/washrom.png" alt="washroom" />
-              <span class="count"><small>1/7</small></span
-              ><span class="name">Washroom</span>
-              <span class="hover">
-                <span class="hoverimage"
-                  ><img src="images/gallery.png" alt="gallery"
-                /></span>
-                +7 More Images</span
-              >
-            </li>
-            <li>
-              <img src="images/bathroom.png" alt="bathroom" />
-              <span class="count"><small>1/7</small></span
-              ><span class="name">Bathroom</span>
-              <span class="hover">
-                <span class="hoverimage"
-                  ><img src="images/gallery.png" alt="gallery"
-                /></span>
-                +7 More Images</span
-              >
-            </li>
-          </ul>
+        <div class="wrapper">
+            <h1>
+                Our<small>&nbsp Amenities
+                    <img src="images/Vector.png" alt="Line" /></small>
+            </h1>
+            <p>
+                Techies Park is a world-class infrastructure with premium
+                amenities to promote education and entrepreneurship and
+                thereby aid overall development of the constituency.
+            </p>
+            <div class="gallery">
+                <ul class="photo-booth">
+                    <li>
+                        <img src="images/meetingroom.png" alt="meeting_room" />
+                        <span class="count"><small>1/7</small></span><span class="name">Administration Room</span>
+                        <span class="hover">+7 More Images</span>
+                    </li>
+                    <li>
+                        <img src="images/reception.png" alt="reception" />
+                        <span class="count"><small>1/7</small></span><span class="name">Reception</span>
+                        <span class="hover">+7 More Images</span>
+                    </li>
+                    <li>
+                        <img src="images/presentation.png" alt="presentation_room" />
+                        <span class="count"><small>1/7</small></span><span class="name">Presentation Room</span>
+                        <span class="hover">+7 More Images</span>
+                    </li>
+                    <li>
+                        <img src="images/workspace.png" alt="workspace" />
+                        <span class="count"><small>1/7</small></span><span class="name">Workspace</span>
+                        <span class="hover">+7 More Images</span>
+                    </li>
+                    <li>
+                        <img src="images/conferenceroom.png" alt="conferenceroom" />
+                        <span class="count"><small>1/7</small></span><span class="name">Conference Room</span>
+                        <span class="hover"> +7 More Images</span>
+                    </li>
+                    <li>
+                        <img src="images/conferenceroom.png" alt="conferenceroom" />
+                        <span class="count"><small>1/7</small></span><span class="name">Conference Room</span>
+                        <span class="hover"> +7 More Images</span>
+                    </li>
+                    <li>
+                        <img src="images/cafeteria.png" alt="cafeteria" />
+                        <span class="count"><small>1/7</small></span><span class="name">Cafeteria </span>
+                        <span class="hover">+7 More Images</span>
+                    </li>
+                    <li>
+                        <img src="images/washrom.png" alt="washroom" />
+                        <span class="count"><small>1/7</small></span><span class="name">Washroom</span>
+                        <span class="hover">+7 More Images</span>
+                    </li>
+                    <li>
+                        <img src="images/bathroom.png" alt="bathroom" />
+                        <span class="count"><small>1/7</small></span><span class="name">Bathroom</span>
+                        <span class="hover">+7 More Images</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </section>
-    <!-- (#Amenities) -->
+    <!-- (#Amenities) ends-->
     <!-- (#events) -->
     <section id="events">
-      <div class="wrapper">
-        <h1 class="head">
-          Our
-          <small>Events <img src="images/Vector.png" alt="Line" /></small>
-        </h1>
-        <p>
-          Several events are being organised by Talrop and its startups in
-          Techies Parks to support entrepreneurship and technological education.
-          Techies Parks is a venue that is open to both governmental and
-          non-governmental organisations.
-        </p>
-        <div class="card">
-          <div class="left">
-            <h2>Business meeting organised on the 28th August at Kannur</h2>
-            <small>Aug 25, 2022</small>
+        <div class="wrapper">
+            <h1 class="head">
+                Our
+                <small>Events <img src="images/Vector.png" alt="Line" /></small>
+            </h1>
             <p>
-              As part of Talrop's Invest in Kerala campaign, a business meeting
-              was organised on 28th August at Kannur.The event was held at
-              Talrop's Techies Park, NAHER Arts and Science College, Kanhirode,
-              Kannur and many potential Angel Investors took part in the
-              meeting. Talked about the needs and opportunities of Angel
-              Investors in a startup and the risks & benefits of Angel Investing
-              were also discussed. A detailed overview of Talrop's mission and
-              investment opportunities in Talrop's startups were discussed.
+                Several events are being organised by Talrop and its
+                startups in Techies Parks to support entrepreneurship and
+                technological education. Techies Parks is a venue that is
+                open to both governmental and non-governmental
+                organisations.
             </p>
-            <div class="bottom">
-              <button>
-                <span class="buttonname">
-                  View More
-                  <img src="images/arrow.png" alt="arrow_image" />
+            <div class="card">
+                <div class="left">
+                    <h2>
+                        Business meeting organised on the 28th August at
+                        Kannur
+                    </h2>
+                    <small>Aug 25, 2022</small>
+                    <p>
+                        As part of Talrop's Invest in Kerala campaign, a
+                        business meeting was organised on 28th August at
+                        Kannur.The event was held at Talrop's Techies Park,
+                        NAHER Arts and Science College, Kanhirode, Kannur
+                        and many potential Angel Investors took part in the
+                        meeting. Talked about the needs and opportunities of
+                        Angel Investors in a startup and the risks &
+                        benefits of Angel Investing were also discussed. A
+                        detailed overview of Talrop's mission and investment
+                        opportunities in Talrop's startups were discussed.
+                    </p>
+                    <div class="bottom">
+                        <button>
+                            <span class="button-name">
+                                View More
+                                <img src="images/arrow.png" alt="arrow_image" />
+                            </span>
+                        </button>
+                        <div class="event-number">
+                            <img src="images/01.png" alt="count" />
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="ImageContainer">
+                        <img src="images/safeer.png" alt="Safeer_image" />
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <h2>
+                        Business meeting organised on the 28th August at
+                        Kannur
+                    </h2>
+                    <small>Aug 25, 2022</small>
+                    <p>
+                        As part of Talrop's Invest in Kerala campaign, a
+                        business meeting was organised on 28th August at
+                        Kannur.The event was held at Talrop's Techies Park,
+                        NAHER Arts and Science College, Kanhirode, Kannur
+                        and many potential Angel Investors took part in the
+                        meeting. Talked about the needs and opportunities of
+                        Angel Investors in a startup and the risks &
+                        benefits of Angel Investing were also discussed. A
+                        detailed overview of Talrop's mission and investment
+                        opportunities in Talrop's startups were discussed.
+                    </p>
+                    <div class="bottom">
+                        <button>
+                            <span class="buttonname"> View More </span>
+                            <img src="images/arrow.png" alt="arrow_image" />
+                        </button>
+                        <div class="eventnumber">
+                            <img src="images/02.png" alt="count" />
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="ImageContainer">
+                        <img src="images/mla.png" alt="Safeer" />
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <h2>
+                        Business meeting organised on the 28th August at
+                        Kannur
+                    </h2>
+                    <small>Aug 25, 2022</small>
+                    <p>
+                        As part of Talrop's Invest in Kerala campaign, a
+                        business meeting was organised on 28th August at
+                        Kannur.The event was held at Talrop's Techies Park,
+                        NAHER Arts and Science College, Kanhirode, Kannur
+                        and many potential Angel Investors took part in the
+                        meeting. Talked about the needs and opportunities of
+                        Angel Investors in a startup and the risks &
+                        benefits of Angel Investing were also discussed. A
+                        detailed overview of Talrop's mission and investment
+                        opportunities in Talrop's startups were discussed.
+                    </p>
+                    <div class="bottom">
+                        <button>
+                            <span class="buttonname"> View More </span>
+                            <img src="images/arrow.png" alt="arrow_image" />
+                        </button>
+                        <div class="eventnumber">
+                            <img src="images/3.png" alt="count" />
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="ImageContainer">
+                        <img src="images/police.png" alt="police" />
+                    </div>
+                </div>
+            </div>
+            <button class="foot">
+                <span class="button-view-name">
+                    View More events
+                    <img src="images/arrow.png" alt="arrow_image" />
                 </span>
-              </button>
-              <div class="eventnumber">
-                <img src="images/01.png" alt="count" />
-              </div>
-            </div>
-          </div>
-          <div class="right">
-            <div class="ImageContainer">
-              <img src="images/safeer.png" alt="safeer" />
-            </div>
-          </div>
+            </button>
         </div>
-        <div class="card">
-          <div class="left">
-            <h2>Business meeting organised on the 28th August at Kannur</h2>
-            <small>Aug 25, 2022</small>
-            <p>
-              As part of Talrop's Invest in Kerala campaign, a business meeting
-              was organised on 28th August at Kannur.The event was held at
-              Talrop's Techies Park, NAHER Arts and Science College, Kanhirode,
-              Kannur and many potential Angel Investors took part in the
-              meeting. Talked about the needs and opportunities of Angel
-              Investors in a startup and the risks & benefits of Angel Investing
-              were also discussed. A detailed overview of Talrop's mission and
-              investment opportunities in Talrop's startups were discussed.
-            </p>
-            <div class="bottom">
-              <button>
-                <span class="buttonname"> View More </span>
-                <img src="images/arrow.png" alt="arrow_image" />
-              </button>
-              <div class="eventnumber">
-                <img src="images/02.png" alt="count" />
-              </div>
-            </div>
-          </div>
-          <div class="right">
-            <div class="ImageContainer">
-              <img src="images/mla.png" alt="safeer" />
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="left">
-            <h2>Business meeting organised on the 28th August at Kannur</h2>
-            <small>Aug 25, 2022</small>
-            <p>
-              As part of Talrop's Invest in Kerala campaign, a business meeting
-              was organised on 28th August at Kannur.The event was held at
-              Talrop's Techies Park, NAHER Arts and Science College, Kanhirode,
-              Kannur and many potential Angel Investors took part in the
-              meeting. Talked about the needs and opportunities of Angel
-              Investors in a startup and the risks & benefits of Angel Investing
-              were also discussed. A detailed overview of Talrop's mission and
-              investment opportunities in Talrop's startups were discussed.
-            </p>
-            <div class="bottom">
-              <button>
-                <span class="buttonname">
-                  View More
-                  <img src="images/arrow.png" alt="arrow_image" />
-                </span>
-              </button>
-              <div class="eventnumber">
-                <img src="images/3.png" alt="count" />
-              </div>
-            </div>
-          </div>
-          <div class="right">
-            <div class="ImageContainer">
-              <img src="images/police.png" alt="police" />
-            </div>
-          </div>
-        </div>
-        <button class="foot">
-          <span class="buttonviewname">
-            View More events <img src="images/arrow.png" alt="arrow_image" />
-          </span>
-        </button>
-      </div>
     </section>
-    <!-- (#events) -->
+    <!-- (#events) ends -->
     <!-- (#revenue) -->
 
     <section id="revenue">
-      <div class="wrapper">
-        <h1>
-          Revenue <span>Models <img src="images/Vector.png" alt="line" /></span>
-        </h1>
-        <p>
-          To build a strong startup ecosystem and accelerate startups, Talrop is
-          establishing Techies Parks in all 140 Assembly constituencies of
-          Kerala. 7 of them are already established and remaining 133 will be
-          done by the end of 2024.
-        </p>
-        <ul class="widget">
-          <li>
-            <div class="green"><img src="images/shares.svg" alt="image" /></div>
-            <div class="white">
-              <img src="images/shareswhite.svg" alt="image" />
-            </div>
-            <h3>Course fee</h3>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec id
-              lectus malesuada massa facilisi tempor. Dui est et eget in lorem
-              turpis eros dignissim.
-            </span>
-          </li>
-          <li>
-            <div class="green"><img src="images/hike.svg" alt="image" /></div>
-            <div class="white">
-              <img src="images/hikewhite.svg" alt="image" />
-            </div>
-            <h3>Startup</h3>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec id
-              lectus malesuada massa facilisi tempor. Dui est et eget in lorem
-              turpis eros dignissim.
-            </span>
-          </li>
-          <li>
-            <div class="green"><img src="images/workstation.svg" alt="image" /></div>
-            <div class="white">
-              <img src="images/workstationwhite.svg" alt="image" />
-            </div>
-            <h3>Co-Working Space</h3>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec id
-              lectus malesuada massa facilisi tempor. Dui est et eget in lorem
-              turpis eros dignissim.
-            </span>
-          </li>
-          <li>
-            <div class="green"><img src="images/sensex.svg" alt="image" /></div>
-            <div class="white">
-              <img src="images/sensexwhite.svg" alt="image" />
-            </div>
-            <h3>Startup Revenue</h3>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec id
-              lectus malesuada massa facilisi tempor. Dui est et eget in lorem
-              turpis eros dignissim.
-            </span>
-          </li>
-
-
-        </ul>
-      </div>
+        <div class="wrapper">
+            <h1>
+                Revenue
+                <span>Models <img src="images/Vector.png" alt="line" /></span>
+            </h1>
+            <p>
+                To build a strong startup ecosystem and accelerate startups,
+                Talrop is establishing Techies Parks in all 140 Assembly
+                constituencies of Kerala. 7 of them are already established
+                and remaining 133 will be done by the end of 2024.
+            </p>
+            <ul class="widget">
+                <li>
+                    <div class="green">
+                        <img src="images/shares.svg" alt="image" />
+                    </div>
+                    <div class="white">
+                        <img src="images/shareswhite.svg" alt="image" />
+                    </div>
+                    <h3>Course fee</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Nec id lectus malesuada massa facilisi tempor.
+                        Dui est et eget in lorem turpis eros dignissim.
+                    </span>
+                </li>
+                <li>
+                    <div class="green">
+                        <img src="images/hike.svg" alt="image" />
+                    </div>
+                    <div class="white">
+                        <img src="images/hikewhite.svg" alt="image" />
+                    </div>
+                    <h3>Startup</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Nec id lectus malesuada massa facilisi tempor.
+                        Dui est et eget in lorem turpis eros dignissim.
+                    </span>
+                </li>
+                <li>
+                    <div class="green">
+                        <img src="images/workstation.svg" alt="image" />
+                    </div>
+                    <div class="white">
+                        <img src="images/workstationwhite.svg" alt="image" />
+                    </div>
+                    <h3>Co-Working Space</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Nec id lectus malesuada massa facilisi tempor.
+                        Dui est et eget in lorem turpis eros dignissim.
+                    </span>
+                </li>
+                <li>
+                    <div class="green">
+                        <img src="images/sensex.svg" alt="image" />
+                    </div>
+                    <div class="white">
+                        <img src="images/sensexwhite.svg" alt="image" />
+                    </div>
+                    <h3>Startup Revenue</h3>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Nec id lectus malesuada massa facilisi tempor.
+                        Dui est et eget in lorem turpis eros dignissim.
+                    </span>
+                </li>
+            </ul>
+        </div>
     </section>
-    <!-- (#revenue) -->
+    <!-- (#revenue) ends -->
+    <!-- (footer) -->
+    <footer>
+        <div class="wrapper">
+            <div class="caption-container">
+                <img src="images/tpwhite.png" alt="TalropLogo" />
+            </div>
+            <h3>A project from</h3>
+            <a href="https://talrop.com/" class="logo">
+                <img src="images/talrop.svg" alt="TalropLogo" />
+            </a>
+            <div class="line"></div>
+            <div class="bottom">
+                <a href="https://www.instagram.com/talropworld/"><img src="images/instagram.png" alt="instagram" /></a>
+                <a href="https://www.facebook.com/talropworld/"><img src="images/facebook.png" alt="facebook" /></a>
+                <a href="https://twitter.com/talropworld/"><img src="images/twitter.png" alt="twitter" /></a>
+                <a href="https://www.linkedin.com/company/talrop/"><img src="images/linkedin.png" alt="linkedin" /></a>
+                <a href="https://www.youtube.com/c/talrop"><img src="images/youtube.png" alt="youtube" /></a>
+            </div>
+        </div>
+    </footer>
+    <!-- (#footer) ends -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 
-  </body>
 </html>

@@ -1,263 +1,538 @@
 @media all and (max-width: 1380px) {
-  section#home div.wrapper header nav.right {
-    width: 50%;
-  }
-  section#home section#spotlight div.left div.location {
-    width: 62%;
-  }
+
+    /* home */
+    section#home header div.wrapper nav div.right {
+        width: 50%;
+    }
+
+    section#home section#spotlight div.left div.location {
+        width: 68%;
+    }
+
+    section#home section#spotlight div.right div.button-container {
+        position: absolute;
+        right: 26%;
+        top: 50%;
+        width: 12%;
+    }
+
+    section#home section#spotlight div.right div.image-container img {
+        height: 560px;
+    }
+
+    /* loginpage */
+    section#login div.right p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
 }
+
 @media all and (max-width: 1280px) {
-  section#home div.wrapper header h1 a {
-    width: 40%;
-  }
-  section#home div.wrapper header nav.right ul li a {
-    font-size: 16px;
-    font-family: "Gordita Medium";
-    color: #666666;
-  }
 
-  section#home section#spotlight div.left h1 {
-    font-size: 46px;
-  }
-  section#home section#spotlight div.left p {
-    font-size: 16px;
-  }
-  section#home section#spotlight div.left div.location {
-    width: 73%;
-  }
+    /* home */
+    section#home header div.wrapper nav h1 a {
+        width: 40%;
+    }
 
-  section#events div.wrapper div.card div.left {
-    width: 45%;
-  }
-  section#events div.wrapper div.card {
-    padding: 30px;
-  }
+    section#home header div.wrapper nav div.right ul li a {
+        font-size: 16px;
+        font-family: "Gordita Medium";
+        color: #666666;
+    }
+
+    section#home section#spotlight div.left h1 {
+        font-size: 42px;
+    }
+
+    section#home section#spotlight div.left p {
+        font-size: 16px;
+    }
+
+    section#home section#spotlight div.left div.location {
+        width: 75%;
+    }
+
+    section#home section#spotlight div.left div.location h4 {
+
+        font-size: 14px;
+    }
+
+    section#home section#spotlight {
+        padding: 160px 0 100px 100px;
+    }
+
+    /* events section */
+    section#events div.wrapper div.card div.left {
+        width: 45%;
+    }
+
+    section#events div.wrapper div.card {
+        padding: 30px;
+
+    }
 }
+
 @media all and (max-width: 1080px) {
-  section#home section#spotlight {
-    padding: 80px 0;
-  }
-  section#home div.wrapper header nav.right ul li a {
-    font-size: 15px;
-  }
-  section#home section#spotlight div.left h1 {
-    font-size: 42px;
-  }
-  section#home section#spotlight div.left p {
-    font-size: 85%;
-  }
-  section#home section#spotlight div.left div.location {
-    width: 81%;
-  }
-  section#home section#spotlight div.right div.imagecontainer img {
-    height: 400px;
-  }
-  section#home section#spotlight div.right div.buttoncontainer {
-    right: 32%;
-    width: 13%;
-  }
-  section#home section#spotlight div.right div.imagecontainer {
-    right: 9%;
-    bottom: 0;
-    width: 58%;
-  }
 
-  section#revenue div.wrapper ul.widget {
-    flex-wrap: wrap;
-  }
-  section#revenue div.wrapper ul.widget li {
-    width: 33%;
-  }
+    /* home responsive */
+    section#home section#spotlight {
+        padding: 80px 0 80px 100px;
+    }
+
+    section#home header div.wrapper nav div.right ul li a {
+        font-size: 15px;
+    }
+
+    section#home section#spotlight div.left h1 {
+        font-size: 38px;
+    }
+
+    section#home section#spotlight div.left p {
+        font-size: 85%;
+    }
+
+    section#home section#spotlight div.left div.location {
+        width: 90%;
+    }
+
+    section#home section#spotlight div.right div.image-container img {
+        height: 500px;
+    }
+
+    section#home section#spotlight div.right div.button-container {
+        right: 21%;
+        width: 13%;
+    }
+
+    section#home section#spotlight div.right div.image-container {
+        right: 0%;
+        bottom: 0;
+        width: 55%;
+    }
+
+    /* revenue responsive */
+    section#revenue div.wrapper ul.widget {
+        flex-wrap: wrap;
+    }
+
+    section#revenue div.wrapper ul.widget li {
+        width: 33%;
+    }
+
+    /* loginpage responsive */
+    section#login div.left div.content h2 {
+        font-size: 24px;
+    }
+
+    section#login div.left div.content p {
+        font-size: 14px;
+
+    }
+
+    section#login div.left div.content {
+        padding-top: 80%;
+    }
+
+    section#login {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    section#login div.right {
+        width: 100%;
+    }
+
+    section#login div.right form button {
+        margin-bottom: 20px;
+    }
+
+    section#login div.left {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    section#login div.left div.content {
+        height: 100vh;
+        padding-top: 55%;
+
+    }
+
 }
+
 @media all and (max-width: 980px) {
-  section#amenities {
-    padding: 70px 0;
-  }
-  section#events {
-    padding: 70px 0;
-  }
-  section#home section#spotlight {
-    flex-direction: column-reverse;
-  }
-  section#home div.wrapper header h1 a {
-    width: 50%;
-  }
-  section#home div.wrapper header nav.right {
-    width: 58%;
-  }
-  section#home div.wrapper header nav.right ul li a {
-    font-size: 13px;
-  }
-  section#home section#spotlight div.right div.imagecontainer {
-    position: static;
-    width: 60%;
-    margin: 0 auto;
-  }
-  section#home section#spotlight div.right {
-    width: 100%;
-  }
-  section#home section#spotlight div.right div.buttoncontainer {
-    width: 16%;
-    top: 23%;
-    left: 42%;
-  }
-  section#home section#spotlight {
-    margin-left: 0;
-  }
-  section#home section#spotlight div.left {
-    width: 100%;
-  }
-  br {
-    display: none;
-  }
-  section#home section#spotlight div.left h1 {
-    font-size: 36px;
-    text-align: center;
-    margin-top: 30px;
-  }
-  section#home section#spotlight div.left p {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-  }
-  section#home section#spotlight div.left div.location {
-    width: 48%;
-    margin: 40px auto;
-  }
-  section#home section#spotlight div.left button {
-    margin: 0 auto;
-  }
-  section#amenities div.wrapper div.gallery ul.photobooth li span.count {
-    padding: 6px 12px;
-  }
-  section#amenities div.wrapper div.gallery ul.photobooth li {
-    width: 48%;
-  }
-  section#events div.wrapper div.card {
-    flex-direction: column-reverse;
-  }
-  section#events div.wrapper div.card:nth-child(2n) {
-    flex-direction: column-reverse;
-  }
-  section#events div.wrapper div.card div.right {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  section#events div.wrapper div.card div.left {
-    width: 100%;
-  }
-  section#revenue div.wrapper ul.widget li {
-    width: 50%;
+
+    /* Amenities responsive */
+    section#amenities {
+        padding: 70px 0;
+    }
+
+    section#amenities div.wrapper div.gallery ul.photo-booth li span.count {
+        padding: 6px 12px;
+    }
+
+    section#amenities div.wrapper div.gallery ul.photo-booth li {
+        width: 48%;
+    }
+
+    /* event responsive */
+    section#events {
+        padding: 70px 0;
+    }
+
+    section#events div.wrapper div.card {
+        flex-direction: column-reverse;
+    }
+
+    section#events div.wrapper div.card:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    section#events div.wrapper div.card div.right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section#events div.wrapper div.card div.left {
+        width: 100%;
+    }
+
+    /* home responsive */
+    section#home section#spotlight {
+        flex-direction: column-reverse;
+        padding-left: 0;
+    }
+
+    section#home header div.wrapper nav h1 a {
+        width: 50%;
+    }
+
+    section#home header div.wrapper nav div.right {
+        width: 58%;
+    }
+
+    section#home header div.wrapper nav div.right ul li a {
+        font-size: 13px;
+    }
+
+    section#home section#spotlight div.right div.image-container {
+        position: static;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    section#home section#spotlight div.right {
+        width: 100%;
+    }
+
+    section#home section#spotlight div.right div.button-container {
+        width: 16%;
+        top: 23%;
+        left: 42%;
+    }
+
+    section#home section#spotlight {
+        margin-left: 0;
+    }
+
+    section#home section#spotlight div.left {
+        width: 100%;
+    }
+
+    br {
+        display: none;
+    }
+
+    section#home section#spotlight div.left h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    section#home section#spotlight div.left p {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    section#home section#spotlight div.left div.location {
+        width: 48%;
+        margin: 40px auto;
+    }
+
+    section#home section#spotlight div.left button {
+        margin: 0 auto;
+    }
+
+    section#home section#spotlight div.right div.image-container img {
+        height: 400px;
+    }
+
+    /* event responsive */
+    section#revenue div.wrapper ul.widget li {
+        width: 50%;
+    }
+
+    /* footer responsive */
+    footer div.wrapper div.caption-container {
+        width: 20%;
+    }
+
+    footer div.wrapper a.logo {
+        width: 7%;
+    }
+
+    footer div.wrapper div.bottom a {
+        width: 14%;
+    }
+
+    footer div.wrapper div.bottom a:nth-child(2) {
+        width: 9%;
+    }
+
+    footer div.wrapper div.bottom {
+        width: 18%;
+    }
 }
-}
+
 @media all and (max-width: 768px) {
-  section#home section#spotlight div.right div.imagecontainer img {
-    height: 350px;
-  }
 
-  section#home div.wrapper header nav.right ul {
-    display: none;
-  }
-  section#home div.wrapper header nav.right div.hamburger {
-    display: block;
-    width: 40%;
-    margin-left: 80%;
-  }
-  section#home div.wrapper header h1 {
-    width: 100%;
-  }
-  section#home div.wrapper header h1 a {
-    width: 60%;
-  }
-  section#home section#spotlight div.left div.location {
-    width: 56%;
-  }
+    /* home responsive */
+    section#home section#spotlight div.right div.image-container img {
+        height: 350px;
+    }
+
+    section#home header div.wrapper nav div.right ul {
+        display: none;
+    }
+
+    section#home header div.wrapper nav div.right div.hamburger {
+        display: block;
+        width: 40%;
+        margin-left: 80%;
+    }
+
+    section#home header div.wrapper nav h1 {
+        width: 100%;
+    }
+
+    section#home header div.wrapper nav h1 a {
+        width: 60%;
+    }
+
+    section#home section#spotlight div.left div.location {
+        width: 56%;
+    }
 }
+
 @media all and (max-width: 640px) {
-  section#home section#spotlight div.right div.imagecontainer img {
-    height: 300px;
-  }
-  section#home section#spotlight div.right div.imagecontainer {
-    width: 70%;
-  }
-  section#home section#spotlight div.left h1 {
-    font-size: 34px;
-  }
-  section#home section#spotlight div.left div.location {
-    width: 75%;
-  }
-  section#amenities div.wrapper div.gallery ul.photobooth li {
-    width: 100%;
-  }
 
-section#revenue div.wrapper p {
-  font-size: 16px;
-}
-section#revenue div.wrapper ul.widget li {
-  width: 100%;
-}
-section#revenue div.wrapper ul.widget li div.green {
-  width: 10%;
-}
-section#revenue div.wrapper ul.widget li div.white {
-  width: 10%;
+    /* home responsive */
+    section#home section#spotlight div.right div.image-container img {
+        height: 300px;
+    }
+
+    section#home section#spotlight div.right div.image-container {
+        width: 70%;
+    }
+
+    section#home section#spotlight div.left h1 {
+        font-size: 34px;
+    }
+
+    section#home section#spotlight div.left div.location {
+        width: 75%;
+    }
+
+    /* Amenities responsive */
+    section#amenities div.wrapper div.gallery ul.photo-booth li {
+        width: 100%;
+    }
+
+    /* revenue responsive */
+    section#revenue div.wrapper p {
+        font-size: 16px;
+    }
+
+    section#revenue div.wrapper ul.widget li {
+        width: 100%;
+    }
+
+    section#revenue div.wrapper ul.widget li div.green {
+        width: 10%;
+    }
+
+    section#revenue div.wrapper ul.widget li div.white {
+        width: 10%;
+    }
+
+    /* footer responsive */
+    footer div.wrapper div.caption-container {
+        width: 30%;
+    }
+
+    footer div.wrapper a.logo {
+        width: 10%;
+    }
+
+    footer div.wrapper div.bottom {
+        width: 28%;
+    }
+
+    /* login-page responsive */
+    section#login div.right div.logo {
+        width: 20%;
+        margin-bottom: 20px;
+    }
+
+    section#login div.right div.text-logo {
+        width: 50%;
+    }
+
+    section#login div.right h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    section#login div.right p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    section#login div.right form>input {
+        padding: 12px 20px;
+    }
+
+    section#login div.right form div.password input {
+        padding: 12px 20px;
+    }
+
+    section#login div.right form button {
+        margin: 30px 0;
+    }
+
+    section#login div.left div.content {
+        padding-top: 80%;
+    }
+
 }
 
-
-}
 @media all and (max-width: 480px) {
-  section#home div.wrapper header h1 a {
-    width: 75%;
-  }
-  section#home div.wrapper header nav.right div.hamburger {
-    width: 55%;
-    margin-left: 70%;
-  }
-  section#home section#spotlight div.right div.imagecontainer img {
-    height: 260px;
-  }
-  section#home section#spotlight div.right div.buttoncontainer {
-    width: 25%;
-    top: 17%;
-    left: 38%;
-  }
-  section#home section#spotlight div.right div.imagecontainer {
-    width: 80%;
-  }
-  section#home section#spotlight div.left h1 {
-    font-size: 26px;
-  }
-  section#home section#spotlight div.left p {
-    width: 80%;
-  }
-  section#home section#spotlight div.left div.location span {
-    width: 40px;
-  }
 
-  section#home section#spotlight div.left div.location h4 {
-    margin-left: 10px;
-  }
-  section#amenities div.wrapper p {
-    font-size: 16px;
-  }
-  section#events div.wrapper div.card div.left div.bottom div.eventnumber img {
-    display: none;
-  }
+    /* home responsive */
+    section#home header div.wrapper nav h1 a {
+        width: 75%;
+    }
 
-  section#events div.wrapper > p {
-    width: 100%;
-    font-size: 16px;
-  }
+    section#home header div.wrapper nav div.right div.hamburger {
+        width: 55%;
+        margin-left: 70%;
+    }
 
-section#revenue div.wrapper p {
-  width: 100%;
+    section#home section#spotlight div.right div.image-container img {
+        height: 260px;
+    }
+
+    section#home section#spotlight div.right div.button-container {
+        width: 25%;
+        top: 17%;
+        left: 38%;
+    }
+
+    section#home section#spotlight div.right div.image-container {
+        width: 80%;
+    }
+
+    section#home section#spotlight div.left h1 {
+        font-size: 26px;
+    }
+
+    section#home section#spotlight div.left p {
+        width: 80%;
+    }
+
+    section#home section#spotlight div.left div.location span {
+        width: 40px;
+    }
+
+    section#home section#spotlight div.left div.location h4 {
+        margin-left: 10px;
+    }
+
+    /* Amenities responsive */
+    section#amenities div.wrapper p {
+        font-size: 16px;
+    }
+
+    /* event responsive */
+    section#events div.wrapper div.card div.left div.bottom div.event-number img {
+        display: none;
+    }
+
+    section#events div.wrapper>p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* revenue responsive */
+    section#revenue div.wrapper p {
+        width: 100%;
+    }
+
+    /* footer responsive */
+    footer {
+        padding-bottom: 20px;
+    }
+
+    footer div.wrapper div.bottom {
+        width: 30%;
+    }
+
+    footer div.wrapper a.logo {
+        width: 12%;
+    }
+
+    footer div.wrapper div.caption-container {
+        width: 45%;
+    }
+
+    footer div.wrapper div.bottom {
+        width: 40%;
+    }
+
+    footer div.wrapper div.bottom a:nth-child(2) {
+        width: 8%;
+    }
+
+    section#login div.right {
+        padding: 30px 40px 0 30px;
+    }
+
+    section#login div.left div.content {
+        padding-top: 100%;
+    }
+
+    section#login div.left div.content p {
+        font-size: 13px;
+    }
+
 }
-}
+
 @media all and (max-width: 360px) {
-  section#home section#spotlight div.left h1 {
-    font-size: 24px;
-  }
-  section#events div.wrapper div.card div.left h2 {
-    font-size: 19px;
-  }
+
+    /* home responsive */
+    section#home section#spotlight div.left h1 {
+        font-size: 24px;
+    }
+
+    /* event responsive */
+    section#events div.wrapper div.card div.left h2 {
+        font-size: 19px;
+    }
+
+    /* footer responsive */
+    footer div.wrapper a.logo {
+        width: 15%;
+    }
 }
