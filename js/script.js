@@ -37,7 +37,7 @@ events_data.map((event) => {
     <div class="left">
       <h2>${event.title}</h2>
       <small>${event.date}</small>
-      <p>${event.description.slice(0,300)}...</p>
+      <p>${event.description.slice(0, 300)}...</p>
       <div class="bottom">
         <button>
             <span class="button-name"> View More </span>
@@ -102,23 +102,31 @@ $(document).ready(function () {
 });
 
 // video playing
-
 let play_button = $("section#home section#spotlight div.right div.button-container")
 let video = $("section#home section#spotlight  div.video-player ")
 let close = $("section#home section#spotlight div.video-player span")
 let video_tag = $("section#home section#spotlight  div.video-player video")
-let play_button2=$("section#home section#spotlight div.left button")
-$(document).ready(function () {
-    $(play_button).click(function () {
-        $(video).show()
-    });
-    $(play_button2).click(function () {
-        $(video).show()
-    });
-    $(close).click(function () {
-        $(video).hide()
-        $(video_tag).pause()
-
-    })
+let play_button2 = $("section#home section#spotlight div.left button")
+$(play_button, play_button2).click(function () {
+    $(video).show()
+    $("body").css("overflow", "hidden");
 
 });
+$(close).click(function () {
+    $(video).hide()
+    if ($(video).hide()) {
+        $("body").css("overflow", "scroll");
+    }
+});
+
+// showing the password field
+$("#login div.right form div.password div.eye-open").click(function () {
+    $("form .password .eye-open").hide();
+    $("form .password .eye-hide").show();
+    $(" form .password input").attr('type', 'text');
+});
+$("#login div.right form div.password div.eye-hide").click(function () {
+    $("form .password .eye-hide").hide();
+    $("form .password .eye-open").show();
+    $(" form .password input").attr('type', 'password');
+});  

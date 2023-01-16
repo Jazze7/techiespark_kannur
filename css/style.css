@@ -134,6 +134,26 @@ p {
     }
 }
 
+@keyframes pulseouter {
+    0% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+@keyframes pulseinner {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -257,7 +277,6 @@ section#home header div.wrapper nav div.right div.menu ul {
 section#home header div.wrapper nav div.right div.menu ul li {
     display: block;
     padding: 15px 0 15px 0;
-    /* border-bottom: #dddddd 1px solid; */
     width: 100%;
 
 }
@@ -279,18 +298,23 @@ section#home section#spotlight {
 }
 
 
-
 section#home section#spotlight div.video-player {
     display: none;
     position: absolute;
-    z-index: 1;
-    left: 20%;
+    z-index: 1000;
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: -webkit-fill-available;
+    background: rgb(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 section#home section#spotlight div.video-player span {
     position: absolute;
-    top: 0;
-    width: 3%;
+    top: 18%;
+    width: 2.5%;
+    right: 17%;
 }
 
 section#home section#spotlight div.video-player span img {
@@ -299,9 +323,9 @@ section#home section#spotlight div.video-player span img {
 }
 
 section#home section#spotlight div.video-player video {
-    width: 80%;
-    margin: 0 auto;
-
+    width: 60%;
+    display: flex;
+    margin: 10% auto;
 }
 
 
@@ -393,19 +417,37 @@ section#home section#spotlight div.right div.image-container img {
 
 section#home section#spotlight div.right div.button-container {
     position: absolute;
-    right: 26%;
+    right: 24%;
     top: 42%;
     width: 11%;
     cursor: pointer;
 }
 
-section#home section#spotlight div.right div.button-container::after {
-    background-color: rgb(15, 167, 111);
-    opacity: 0.4;
-    z-index: -1;
+section#home section#spotlight div.right div.button-container .build-button {
+    border-radius: 50%;
+    width: 80%;
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
 }
 
-section#home section#spotlight div.right div.button-container img {
+section#home section#spotlight div.right div.button-container .build-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    transition: 2s;
+    background-color: #0fa76f;
+    opacity: 0.4;
+    z-index: -1;
+    animation: pulseouter 2s infinite;
+}
+
+
+section#home section#spotlight div.right div.button-container .build-button img {
     display: block;
     width: 100%;
 }
@@ -599,7 +641,7 @@ section#events div.wrapper>p {
     margin: 0 auto 30px auto;
 }
 
-section#events div.wrapper ul.card li { 
+section#events div.wrapper ul.card li {
     display: flex;
     justify-content: space-between;
     background: #fff6f9;
@@ -609,26 +651,28 @@ section#events div.wrapper ul.card li {
     margin-bottom: 25px;
 
 }
-section#events div.wrapper ul.card li:nth-child(2) { 
+
+section#events div.wrapper ul.card li:nth-child(2) {
     display: flex;
     background: #f1fcff;
     flex-direction: row-reverse;
     border: 1px solid #c8efef;
 }
-section#events div.wrapper ul.card li:nth-child(3) { 
+
+section#events div.wrapper ul.card li:nth-child(3) {
     background: #fff6f9;
     margin-bottom: 50px;
-    border: 1px solid #d4d4d4;   
+    border: 1px solid #d4d4d4;
 }
 
 
 
 
-section#events div.wrapper ul.card li div.left { 
+section#events div.wrapper ul.card li div.left {
     width: 50%;
 }
 
-section#events div.wrapper ul.card li div.left h2 { 
+section#events div.wrapper ul.card li div.left h2 {
     font-family: "SansBold";
     font-size: 22px;
     margin-bottom: 10px;
@@ -636,7 +680,7 @@ section#events div.wrapper ul.card li div.left h2 {
 
 }
 
-section#events div.wrapper ul.card li div.left small { 
+section#events div.wrapper ul.card li div.left small {
     font-family: "SansMedium";
     font-size: 16px;
     margin-bottom: 20px;
@@ -645,20 +689,20 @@ section#events div.wrapper ul.card li div.left small {
 
 }
 
-section#events div.wrapper ul.card li div.left p { 
+section#events div.wrapper ul.card li div.left p {
     font-size: 15px;
     color: #747474;
     margin-bottom: 25%;
 
 }
 
-section#events div.wrapper ul.card li div.left div.bottom { 
+section#events div.wrapper ul.card li div.left div.bottom {
     display: flex;
     justify-content: space-between;
 
 }
 
-section#events div.wrapper ul.card li div.left div.bottom button { 
+section#events div.wrapper ul.card li div.left div.bottom button {
     background: #0fa76f;
     padding: 0 10px;
     height: 40px;
@@ -671,7 +715,7 @@ section#events div.wrapper ul.card li div.left div.bottom button {
 
 }
 
-section#events div.wrapper ul.card li div.left div.bottom button span.button-name { 
+section#events div.wrapper ul.card li div.left div.bottom button span.button-name {
     font-family: "SansMedium";
     font-size: 14px;
     color: #fff;
@@ -679,30 +723,30 @@ section#events div.wrapper ul.card li div.left div.bottom button span.button-nam
 
 }
 
-section#events div.wrapper ul.card li div.left div.bottom button img { 
+section#events div.wrapper ul.card li div.left div.bottom button img {
     width: 20px;
 
 }
 
-section#events div.wrapper ul.card li div.left div.bottom div.event-number img { 
+section#events div.wrapper ul.card li div.left div.bottom div.event-number img {
     display: block;
     width: 100%;
 
 }
 
-section#events div.wrapper ul.card li div.right { 
+section#events div.wrapper ul.card li div.right {
     width: 45%;
 
 }
 
-section#events div.wrapper ul.card li div.right div.ImageContainer { 
+section#events div.wrapper ul.card li div.right div.ImageContainer {
     width: 100%;
     height: 100%;
     display: inline-block;
 
 }
 
-section#events div.wrapper ul.card li div.right div.ImageContainer img { 
+section#events div.wrapper ul.card li div.right div.ImageContainer img {
     display: block;
     width: 100%;
     height: 100%;
@@ -910,7 +954,7 @@ section#login {
 }
 
 section#login div.left {
-    background: url("../images/loginbg.png");
+    background: url("../assets/images/loginbg.png");
     background-size: cover;
     width: 50%;
 }
@@ -1018,6 +1062,10 @@ section#login div.right form div.password div.eye-open img {
 
 section#login div.right form div.password div.eye-hide {
     display: none;
+    width: 5%;
+    position: absolute;
+    top: 20%;
+    right: 2%;
 }
 
 section#login div.right form div.password div.eye-hide img {
