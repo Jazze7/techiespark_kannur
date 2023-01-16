@@ -63,9 +63,6 @@
     }
 
     /* events section */
-    section#events div.wrapper div.card div.left {
-        width: 45%;
-    }
 
     section#events div.wrapper div.card {
         padding: 30px;
@@ -181,20 +178,19 @@
         padding: 70px 0;
     }
 
-    section#events div.wrapper div.card {
+    section#events div.wrapper ul.card li { 
         flex-direction: column-reverse;
     }
 
-    section#events div.wrapper div.card:nth-child(2n) {
+    section#events div.wrapper ul.card li:nth-child(2) { 
         flex-direction: column-reverse;
     }
 
-    section#events div.wrapper div.card div.right {
+    section#events div.wrapper ul.card li div.right { 
         width: 100%;
         margin-bottom: 20px;
     }
-
-    section#events div.wrapper div.card div.left {
+    section#events div.wrapper ul.card li div.left { 
         width: 100%;
     }
 
@@ -269,7 +265,7 @@
         height: 400px;
     }
 
-    /* event responsive */
+    /* revenue responsive */
     section#revenue div.wrapper ul.widget li {
         width: 50%;
     }
@@ -466,9 +462,13 @@
     }
 
     /* event responsive */
-    section#events div.wrapper div.card div.left div.bottom div.event-number img {
+    section#events div.wrapper ul.card li div.left div.bottom div.event-number { 
         display: none;
     }
+    section#events div.wrapper ul.card li { 
+    padding: 30px;
+}
+
 
     section#events div.wrapper>p {
         width: 100%;
@@ -527,7 +527,7 @@
     }
 
     /* event responsive */
-    section#events div.wrapper div.card div.left h2 {
+    section#events div.wrapper ul.card li div.left h2 { 
         font-size: 19px;
     }
 

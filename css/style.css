@@ -70,8 +70,8 @@ p {
 
 @font-face {
     font-family: "Gordita Regular";
-    src: url("../fonts/Gordita-Regular.woff2") format("woff2"),
-        url("../fonts/Gordita-Regular.woff") format("woff");
+    src: url("../assets/fonts/DMSans-Regular.woff2") format("woff2"),
+        url("../assets/fonts/Gordita-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -79,8 +79,8 @@ p {
 
 @font-face {
     font-family: "Gordita Bold";
-    src: url("../fonts/Gordita-Bold.woff2") format("woff2"),
-        url("../fonts/Gordita-Bold.woff") format("woff");
+    src: url("../assets/fonts/Gordita-Bold.woff2") format("woff2"),
+        url("../assets/fonts/Gordita-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -88,8 +88,8 @@ p {
 
 @font-face {
     font-family: "Gordita Medium";
-    src: url("../fonts/Gordita-Medium.woff2") format("woff2"),
-        url("../fonts/Gordita-Medium.woff") format("woff");
+    src: url("../assets/fonts/Gordita-Medium.woff2") format("woff2"),
+        url("../assets/fonts/Gordita-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -97,8 +97,8 @@ p {
 
 @font-face {
     font-family: "SansBold";
-    src: url("../fonts/DMSans-Bold.woff2") format("woff2"),
-        url("../fonts/DMSans-Bold.woff") format("woff");
+    src: url("../assets/fonts/DMSans-Bold.woff2") format("woff2"),
+        url("../assets/fonts/DMSans-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -106,8 +106,8 @@ p {
 
 @font-face {
     font-family: "SansMedium";
-    src: url("../fonts/DMSans-Medium.woff2") format("woff2"),
-        url("../fonts/DMSans-Medium.woff") format("woff");
+    src: url("../assets/fonts/DMSans-Medium.woff2") format("woff2"),
+        url("../assets/fonts/DMSans-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -115,8 +115,8 @@ p {
 
 @font-face {
     font-family: "SansRegular";
-    src: url("../fonts/DMSans-Regular.woff2") format("woff2"),
-        url("../fonts/DMSans-Regular.woff") format("woff");
+    src: url("../assets/fonts/DMSans-Regular.woff2") format("woff2"),
+        url("../assets/fonts/DMSans-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -599,7 +599,7 @@ section#events div.wrapper>p {
     margin: 0 auto 30px auto;
 }
 
-section#events div.wrapper div.card {
+section#events div.wrapper ul.card li { 
     display: flex;
     justify-content: space-between;
     background: #fff6f9;
@@ -607,52 +607,58 @@ section#events div.wrapper div.card {
     padding: 50px;
     border: 1px solid pink;
     margin-bottom: 25px;
-}
 
-section#events div.wrapper div.card:nth-child(2n) {
+}
+section#events div.wrapper ul.card li:nth-child(2) { 
     display: flex;
     background: #f1fcff;
     flex-direction: row-reverse;
     border: 1px solid #c8efef;
 }
-
-section#events div.wrapper div.card:nth-child(5) {
+section#events div.wrapper ul.card li:nth-child(3) { 
     background: #fff6f9;
     margin-bottom: 50px;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #d4d4d4;   
 }
 
-section#events div.wrapper div.card div.left {
+
+
+
+section#events div.wrapper ul.card li div.left { 
     width: 50%;
 }
 
-section#events div.wrapper div.card div.left h2 {
+section#events div.wrapper ul.card li div.left h2 { 
     font-family: "SansBold";
     font-size: 22px;
     margin-bottom: 10px;
     color: #000;
+
 }
 
-section#events div.wrapper div.card div.left small {
+section#events div.wrapper ul.card li div.left small { 
     font-family: "SansMedium";
     font-size: 16px;
     margin-bottom: 20px;
     color: #adadad;
     display: block;
+
 }
 
-section#events div.wrapper div.card div.left p {
+section#events div.wrapper ul.card li div.left p { 
     font-size: 15px;
     color: #747474;
     margin-bottom: 25%;
+
 }
 
-section#events div.wrapper div.card div.left div.bottom {
+section#events div.wrapper ul.card li div.left div.bottom { 
     display: flex;
     justify-content: space-between;
+
 }
 
-section#events div.wrapper div.card div.left div.bottom button {
+section#events div.wrapper ul.card li div.left div.bottom button { 
     background: #0fa76f;
     padding: 0 10px;
     height: 40px;
@@ -662,34 +668,47 @@ section#events div.wrapper div.card div.left div.bottom button {
     display: flex;
     align-items: center;
     width: 110px;
+
 }
 
-section#events div.wrapper div.card div.left div.bottom button span.button-name {
+section#events div.wrapper ul.card li div.left div.bottom button span.button-name { 
     font-family: "SansMedium";
     font-size: 14px;
     color: #fff;
     display: contents;
+
 }
 
-section#events div.wrapper div.card div.left div.bottom button img {
+section#events div.wrapper ul.card li div.left div.bottom button img { 
     width: 20px;
+
 }
 
-section#events div.wrapper div.card div.right {
+section#events div.wrapper ul.card li div.left div.bottom div.event-number img { 
+    display: block;
+    width: 100%;
+
+}
+
+section#events div.wrapper ul.card li div.right { 
     width: 45%;
+
 }
 
-section#events div.wrapper div.card div.right div.ImageContainer {
+section#events div.wrapper ul.card li div.right div.ImageContainer { 
     width: 100%;
     height: 100%;
     display: inline-block;
+
 }
 
-section#events div.wrapper div.card div.right div.ImageContainer img {
+section#events div.wrapper ul.card li div.right div.ImageContainer img { 
     display: block;
     width: 100%;
     height: 100%;
+
 }
+
 
 section#events div.wrapper button.foot {
     width: 100%;
